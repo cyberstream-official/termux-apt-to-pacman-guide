@@ -60,8 +60,8 @@ This is the most critical phase where you will switch from the old APT environme
 
     This command finalizes the switch by replacing the original `usr` directory with the new Pacman environment you have just set up.
 
-> [!warning]
-> This is a destructive and irreversible action. It will permanently delete your previous APT environment and all packages installed with it. Ensure you have backed up any critical data before proceeding.
+    > [!warning]
+    > This is a destructive and irreversible action. It will permanently delete your previous APT environment and all packages installed with it. Ensure you have backed up any critical data before proceeding.
 
     ```zsh
     rm -rf "$PREFIX/../usr" && mv "$PREFIX/../usr-n" "$PREFIX/../usr"
